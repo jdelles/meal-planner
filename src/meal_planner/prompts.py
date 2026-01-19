@@ -22,9 +22,10 @@ Generate {days} dinner recipes that:
 1. Use overlapping ingredients across meals to minimize waste and shopping
 2. Are kid-friendly but not boring (real food, not just chicken nuggets)
 3. Have simple, clear instructions appropriate for {skill_level} level
-4. Include realistic portion sizes for {family_size} people
+4. Include GENEROUS portion sizes for {family_size} people (plan for 6-8 oz of protein per person, adults eat more than kids)
 5. Can be prepared in {max_cook_time} minutes or less
 6. Consider common pantry staples (assume basics like oil, salt, pepper, common spices)
+7. Account for leftovers - families often want extra portions
 
 Return ONLY valid JSON in this exact format (no markdown, no explanation):
 {{
@@ -34,7 +35,7 @@ Return ONLY valid JSON in this exact format (no markdown, no explanation):
       "cook_time": 30,
       "servings": {family_size},
       "ingredients": [
-        "2 lbs chicken breast",
+        "2 lbs chicken breast (6-8 oz per person)",
         "1 cup rice",
         "2 bell peppers, diced"
       ],
